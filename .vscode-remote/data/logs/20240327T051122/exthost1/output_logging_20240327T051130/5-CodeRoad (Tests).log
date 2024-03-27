@@ -1,0 +1,522 @@
+FAILED TEST LOG
+  ✘ SUBTASKS 1.1 "before all" hook for ":1 "universe" database should exist"
+
+Error: Cannot connect to psql
+error: database "universe" does not exist
+at Context.<anonymous> (test/1.1.test.js:14:13)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+FAILED TEST LOG
+  ✘ SUBTASKS 1.1 :2 "galaxy", "star", "planet" and "moon" tables should exist
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(galaxyIndex >= 0 && starIndex >= 0 && planetIndex >= 0 && moonIndex >= 0)
+
+at Context.<anonymous> (test/1.1.test.js:58:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  ✘ SUBTASKS 1.1 :6 "INT" data type should be used on two columns that aren't a key
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(integerColumnsRes.rows.length - intKeys >= 2)
+
+at Context.<anonymous> (test/1.1.test.js:124:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  ✘ SUBTASKS 1.1 :9 "BOOLEAN" data type should be used on at least two columns
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(booleanColumnsRes.rows.length >= 2)
+
+at Context.<anonymous> (test/1.1.test.js:151:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  ✘ SUBTASKS 1.1 :10 Each "star" row should have a foreign key that references one of the "galaxy" rows
+
+error: relation "star" does not exist
+at Parser.parseErrorMessage (node_modules/pg-protocol/dist/parser.js:278:15)
+at Parser.handlePacket (node_modules/pg-protocol/dist/parser.js:126:29)
+at Parser.parse (node_modules/pg-protocol/dist/parser.js:39:38)
+at Socket.<anonymous> (node_modules/pg-protocol/dist/index.js:8:42)
+at Socket.emit (node:events:518:28)
+at addChunk (node:internal/streams/readable:559:12)
+at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+at Readable.push (node:internal/streams/readable:390:5)
+at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+  ✘ SUBTASKS 1.1 :11 Each "planet" row should have a foreign key that references one of the "star" rows
+
+error: relation "planet" does not exist
+at Parser.parseErrorMessage (node_modules/pg-protocol/dist/parser.js:278:15)
+at Parser.handlePacket (node_modules/pg-protocol/dist/parser.js:126:29)
+at Parser.parse (node_modules/pg-protocol/dist/parser.js:39:38)
+at Socket.<anonymous> (node_modules/pg-protocol/dist/index.js:8:42)
+at Socket.emit (node:events:518:28)
+at addChunk (node:internal/streams/readable:559:12)
+at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+at Readable.push (node:internal/streams/readable:390:5)
+at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+  ✘ SUBTASKS 1.1 :12 Each "moon" row should have a foreign key that references one of the "planet" rows
+
+error: relation "moon" does not exist
+at Parser.parseErrorMessage (node_modules/pg-protocol/dist/parser.js:278:15)
+at Parser.handlePacket (node_modules/pg-protocol/dist/parser.js:126:29)
+at Parser.parse (node_modules/pg-protocol/dist/parser.js:39:38)
+at Socket.<anonymous> (node_modules/pg-protocol/dist/index.js:8:42)
+at Socket.emit (node:events:518:28)
+at addChunk (node:internal/streams/readable:559:12)
+at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+at Readable.push (node:internal/streams/readable:390:5)
+at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+  ✘ SUBTASKS 1.1 :13 "universe" database should have at least five tables
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(tablesRes.rows.length >= 5)
+
+at Context.<anonymous> (test/1.1.test.js:223:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  ✘ SUBTASKS 1.1 :15 The "galaxy" and "star" tables should each have at least six rows
+
+error: relation "star" does not exist
+at Parser.parseErrorMessage (node_modules/pg-protocol/dist/parser.js:278:15)
+at Parser.handlePacket (node_modules/pg-protocol/dist/parser.js:126:29)
+at Parser.parse (node_modules/pg-protocol/dist/parser.js:39:38)
+at Socket.<anonymous> (node_modules/pg-protocol/dist/index.js:8:42)
+at Socket.emit (node:events:518:28)
+at addChunk (node:internal/streams/readable:559:12)
+at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+at Readable.push (node:internal/streams/readable:390:5)
+at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+  ✘ SUBTASKS 1.1 :16 The "planet" table should have at least 12 rows
+
+error: relation "planet" does not exist
+at Parser.parseErrorMessage (node_modules/pg-protocol/dist/parser.js:278:15)
+at Parser.handlePacket (node_modules/pg-protocol/dist/parser.js:126:29)
+at Parser.parse (node_modules/pg-protocol/dist/parser.js:39:38)
+at Socket.<anonymous> (node_modules/pg-protocol/dist/index.js:8:42)
+at Socket.emit (node:events:518:28)
+at addChunk (node:internal/streams/readable:559:12)
+at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+at Readable.push (node:internal/streams/readable:390:5)
+at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+  ✘ SUBTASKS 1.1 :17 The "moon" table should have at least 20 rows
+
+error: relation "moon" does not exist
+at Parser.parseErrorMessage (node_modules/pg-protocol/dist/parser.js:278:15)
+at Parser.handlePacket (node_modules/pg-protocol/dist/parser.js:126:29)
+at Parser.parse (node_modules/pg-protocol/dist/parser.js:39:38)
+at Socket.<anonymous> (node_modules/pg-protocol/dist/index.js:8:42)
+at Socket.emit (node:events:518:28)
+at addChunk (node:internal/streams/readable:559:12)
+at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+at Readable.push (node:internal/streams/readable:390:5)
+at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+  ✘ SUBTASKS 1.1 :19 The "galaxy", "star", "planet" and "moon" should each have at least five columns
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(filteredTables.length >= 4)
+
+at Context.<anonymous> (test/1.1.test.js:295:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  ✘ SUBTASKS 1.1 :24 Each foreign key column should share a name with the column it is referencing
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(foreignKeysRes.rows.length >= 1)
+
+at Context.<anonymous> (test/1.1.test.js:372:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+FAILED TEST LOG
+  ✘ SUBTASKS 1.1 :2 "galaxy", "star", "planet" and "moon" tables should exist
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(galaxyIndex >= 0 && starIndex >= 0 && planetIndex >= 0 && moonIndex >= 0)
+
+at Context.<anonymous> (test/1.1.test.js:58:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  ✘ SUBTASKS 1.1 :11 Each "planet" row should have a foreign key that references one of the "star" rows
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(planetRowsRes.rows.length >= 1)
+
+at Context.<anonymous> (test/1.1.test.js:193:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  ✘ SUBTASKS 1.1 :12 Each "moon" row should have a foreign key that references one of the "planet" rows
+
+error: relation "moon" does not exist
+at Parser.parseErrorMessage (node_modules/pg-protocol/dist/parser.js:278:15)
+at Parser.handlePacket (node_modules/pg-protocol/dist/parser.js:126:29)
+at Parser.parse (node_modules/pg-protocol/dist/parser.js:39:38)
+at Socket.<anonymous> (node_modules/pg-protocol/dist/index.js:8:42)
+at Socket.emit (node:events:518:28)
+at addChunk (node:internal/streams/readable:559:12)
+at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+at Readable.push (node:internal/streams/readable:390:5)
+at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+  ✘ SUBTASKS 1.1 :13 "universe" database should have at least five tables
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(tablesRes.rows.length >= 5)
+
+at Context.<anonymous> (test/1.1.test.js:223:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  ✘ SUBTASKS 1.1 :14 Each table should have at least three rows
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(false)
+
+at Context.<anonymous> (test/1.1.test.js:236:54)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  ✘ SUBTASKS 1.1 :16 The "planet" table should have at least 12 rows
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(planetRowsRes.rows.length >= 12)
+
+at Context.<anonymous> (test/1.1.test.js:259:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  ✘ SUBTASKS 1.1 :17 The "moon" table should have at least 20 rows
+
+error: relation "moon" does not exist
+at Parser.parseErrorMessage (node_modules/pg-protocol/dist/parser.js:278:15)
+at Parser.handlePacket (node_modules/pg-protocol/dist/parser.js:126:29)
+at Parser.parse (node_modules/pg-protocol/dist/parser.js:39:38)
+at Socket.<anonymous> (node_modules/pg-protocol/dist/index.js:8:42)
+at Socket.emit (node:events:518:28)
+at addChunk (node:internal/streams/readable:559:12)
+at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+at Readable.push (node:internal/streams/readable:390:5)
+at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+  ✘ SUBTASKS 1.1 :19 The "galaxy", "star", "planet" and "moon" should each have at least five columns
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(filteredTables.length >= 4)
+
+at Context.<anonymous> (test/1.1.test.js:295:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+FAILED TEST LOG
+  ✘ SUBTASKS 1.1 :2 "galaxy", "star", "planet" and "moon" tables should exist
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(galaxyIndex >= 0 && starIndex >= 0 && planetIndex >= 0 && moonIndex >= 0)
+
+at Context.<anonymous> (test/1.1.test.js:58:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  ✘ SUBTASKS 1.1 :11 Each "planet" row should have a foreign key that references one of the "star" rows
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(planetRowsRes.rows.length >= 1)
+
+at Context.<anonymous> (test/1.1.test.js:193:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  ✘ SUBTASKS 1.1 :12 Each "moon" row should have a foreign key that references one of the "planet" rows
+
+error: relation "moon" does not exist
+at Parser.parseErrorMessage (node_modules/pg-protocol/dist/parser.js:278:15)
+at Parser.handlePacket (node_modules/pg-protocol/dist/parser.js:126:29)
+at Parser.parse (node_modules/pg-protocol/dist/parser.js:39:38)
+at Socket.<anonymous> (node_modules/pg-protocol/dist/index.js:8:42)
+at Socket.emit (node:events:518:28)
+at addChunk (node:internal/streams/readable:559:12)
+at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+at Readable.push (node:internal/streams/readable:390:5)
+at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+  ✘ SUBTASKS 1.1 :13 "universe" database should have at least five tables
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(tablesRes.rows.length >= 5)
+
+at Context.<anonymous> (test/1.1.test.js:223:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  ✘ SUBTASKS 1.1 :14 Each table should have at least three rows
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(false)
+
+at Context.<anonymous> (test/1.1.test.js:236:54)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  ✘ SUBTASKS 1.1 :16 The "planet" table should have at least 12 rows
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(planetRowsRes.rows.length >= 12)
+
+at Context.<anonymous> (test/1.1.test.js:259:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  ✘ SUBTASKS 1.1 :17 The "moon" table should have at least 20 rows
+
+error: relation "moon" does not exist
+at Parser.parseErrorMessage (node_modules/pg-protocol/dist/parser.js:278:15)
+at Parser.handlePacket (node_modules/pg-protocol/dist/parser.js:126:29)
+at Parser.parse (node_modules/pg-protocol/dist/parser.js:39:38)
+at Socket.<anonymous> (node_modules/pg-protocol/dist/index.js:8:42)
+at Socket.emit (node:events:518:28)
+at addChunk (node:internal/streams/readable:559:12)
+at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+at Readable.push (node:internal/streams/readable:390:5)
+at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+  ✘ SUBTASKS 1.1 :19 The "galaxy", "star", "planet" and "moon" should each have at least five columns
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(filteredTables.length >= 4)
+
+at Context.<anonymous> (test/1.1.test.js:295:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+FAILED TEST LOG
+  ✘ SUBTASKS 1.1 :2 "galaxy", "star", "planet" and "moon" tables should exist
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(galaxyIndex >= 0 && starIndex >= 0 && planetIndex >= 0 && moonIndex >= 0)
+
+at Context.<anonymous> (test/1.1.test.js:58:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  ✘ SUBTASKS 1.1 :11 Each "planet" row should have a foreign key that references one of the "star" rows
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(planetRowsRes.rows.length >= 1)
+
+at Context.<anonymous> (test/1.1.test.js:193:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  ✘ SUBTASKS 1.1 :12 Each "moon" row should have a foreign key that references one of the "planet" rows
+
+error: relation "moon" does not exist
+at Parser.parseErrorMessage (node_modules/pg-protocol/dist/parser.js:278:15)
+at Parser.handlePacket (node_modules/pg-protocol/dist/parser.js:126:29)
+at Parser.parse (node_modules/pg-protocol/dist/parser.js:39:38)
+at Socket.<anonymous> (node_modules/pg-protocol/dist/index.js:8:42)
+at Socket.emit (node:events:518:28)
+at addChunk (node:internal/streams/readable:559:12)
+at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+at Readable.push (node:internal/streams/readable:390:5)
+at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+  ✘ SUBTASKS 1.1 :13 "universe" database should have at least five tables
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(tablesRes.rows.length >= 5)
+
+at Context.<anonymous> (test/1.1.test.js:223:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  ✘ SUBTASKS 1.1 :14 Each table should have at least three rows
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(false)
+
+at Context.<anonymous> (test/1.1.test.js:236:54)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  ✘ SUBTASKS 1.1 :16 The "planet" table should have at least 12 rows
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(planetRowsRes.rows.length >= 12)
+
+at Context.<anonymous> (test/1.1.test.js:259:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  ✘ SUBTASKS 1.1 :17 The "moon" table should have at least 20 rows
+
+error: relation "moon" does not exist
+at Parser.parseErrorMessage (node_modules/pg-protocol/dist/parser.js:278:15)
+at Parser.handlePacket (node_modules/pg-protocol/dist/parser.js:126:29)
+at Parser.parse (node_modules/pg-protocol/dist/parser.js:39:38)
+at Socket.<anonymous> (node_modules/pg-protocol/dist/index.js:8:42)
+at Socket.emit (node:events:518:28)
+at addChunk (node:internal/streams/readable:559:12)
+at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+at Readable.push (node:internal/streams/readable:390:5)
+at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+  ✘ SUBTASKS 1.1 :19 The "galaxy", "star", "planet" and "moon" should each have at least five columns
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(filteredTables.length >= 4)
+
+at Context.<anonymous> (test/1.1.test.js:295:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+FAILED TEST LOG
+  ✘ SUBTASKS 1.1 :2 "galaxy", "star", "planet" and "moon" tables should exist
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(galaxyIndex >= 0 && starIndex >= 0 && planetIndex >= 0 && moonIndex >= 0)
+
+at Context.<anonymous> (test/1.1.test.js:58:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  ✘ SUBTASKS 1.1 :12 Each "moon" row should have a foreign key that references one of the "planet" rows
+
+error: relation "moon" does not exist
+at Parser.parseErrorMessage (node_modules/pg-protocol/dist/parser.js:278:15)
+at Parser.handlePacket (node_modules/pg-protocol/dist/parser.js:126:29)
+at Parser.parse (node_modules/pg-protocol/dist/parser.js:39:38)
+at Socket.<anonymous> (node_modules/pg-protocol/dist/index.js:8:42)
+at Socket.emit (node:events:518:28)
+at addChunk (node:internal/streams/readable:559:12)
+at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+at Readable.push (node:internal/streams/readable:390:5)
+at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+  ✘ SUBTASKS 1.1 :13 "universe" database should have at least five tables
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(tablesRes.rows.length >= 5)
+
+at Context.<anonymous> (test/1.1.test.js:223:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  ✘ SUBTASKS 1.1 :16 The "planet" table should have at least 12 rows
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(planetRowsRes.rows.length >= 12)
+
+at Context.<anonymous> (test/1.1.test.js:259:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  ✘ SUBTASKS 1.1 :17 The "moon" table should have at least 20 rows
+
+error: relation "moon" does not exist
+at Parser.parseErrorMessage (node_modules/pg-protocol/dist/parser.js:278:15)
+at Parser.handlePacket (node_modules/pg-protocol/dist/parser.js:126:29)
+at Parser.parse (node_modules/pg-protocol/dist/parser.js:39:38)
+at Socket.<anonymous> (node_modules/pg-protocol/dist/index.js:8:42)
+at Socket.emit (node:events:518:28)
+at addChunk (node:internal/streams/readable:559:12)
+at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+at Readable.push (node:internal/streams/readable:390:5)
+at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+  ✘ SUBTASKS 1.1 :19 The "galaxy", "star", "planet" and "moon" should each have at least five columns
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(filteredTables.length >= 4)
+
+at Context.<anonymous> (test/1.1.test.js:295:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+FAILED TEST LOG
+  ✘ SUBTASKS 1.1 :13 "universe" database should have at least five tables
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(tablesRes.rows.length >= 5)
+
+at Context.<anonymous> (test/1.1.test.js:223:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  ✘ SUBTASKS 1.1 :14 Each table should have at least three rows
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(false)
+
+at Context.<anonymous> (test/1.1.test.js:236:54)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  ✘ SUBTASKS 1.1 :16 The "planet" table should have at least 12 rows
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(planetRowsRes.rows.length >= 12)
+
+at Context.<anonymous> (test/1.1.test.js:259:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  ✘ SUBTASKS 1.1 :17 The "moon" table should have at least 20 rows
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(moonRowsRes.rows.length >= 20)
+
+at Context.<anonymous> (test/1.1.test.js:268:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+FAILED TEST LOG
+  ✘ SUBTASKS 1.1 :13 "universe" database should have at least five tables
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(tablesRes.rows.length >= 5)
+
+at Context.<anonymous> (test/1.1.test.js:223:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  ✘ SUBTASKS 1.1 :16 The "planet" table should have at least 12 rows
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(planetRowsRes.rows.length >= 12)
+
+at Context.<anonymous> (test/1.1.test.js:259:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  ✘ SUBTASKS 1.1 :17 The "moon" table should have at least 20 rows
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(moonRowsRes.rows.length >= 20)
+
+at Context.<anonymous> (test/1.1.test.js:268:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+FAILED TEST LOG
+  ✘ SUBTASKS 1.1 :14 Each table should have at least three rows
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(false)
+
+at Context.<anonymous> (test/1.1.test.js:236:54)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  ✘ SUBTASKS 1.1 :16 The "planet" table should have at least 12 rows
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(planetRowsRes.rows.length >= 12)
+
+at Context.<anonymous> (test/1.1.test.js:259:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  ✘ SUBTASKS 1.1 :17 The "moon" table should have at least 20 rows
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(moonRowsRes.rows.length >= 20)
+
+at Context.<anonymous> (test/1.1.test.js:268:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+FAILED TEST LOG
+  ✘ SUBTASKS 1.1 :16 The "planet" table should have at least 12 rows
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(planetRowsRes.rows.length >= 12)
+
+at Context.<anonymous> (test/1.1.test.js:259:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  ✘ SUBTASKS 1.1 :17 The "moon" table should have at least 20 rows
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(moonRowsRes.rows.length >= 20)
+
+at Context.<anonymous> (test/1.1.test.js:268:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+FAILED TEST LOG
+  ✘ SUBTASKS 1.1 :12 Each "moon" row should have a foreign key that references one of the "planet" rows
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(false)
+
+at Context.<anonymous> (test/1.1.test.js:212:36)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+FAILED TEST LOG
+  ✘ SUBTASKS 1.1 :17 The "moon" table should have at least 20 rows
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(moonRowsRes.rows.length >= 20)
+
+at Context.<anonymous> (test/1.1.test.js:268:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)

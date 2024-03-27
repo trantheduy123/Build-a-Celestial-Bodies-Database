@@ -1,0 +1,189 @@
+2024-03-27 05:11:32.008 [info] Log level: Info
+2024-03-27 05:11:32.009 [info] Validating found git in: "git"
+2024-03-27 05:11:32.009 [info] Using git "2.43.0" from "git"
+2024-03-27 05:11:32.009 [info] > git rev-parse --show-toplevel [1ms]
+2024-03-27 05:11:32.009 [info] > git rev-parse --git-dir --git-common-dir [1ms]
+2024-03-27 05:11:32.009 [info] Open repository: /workspace/project
+2024-03-27 05:11:32.009 [info] > git config --get commit.template [8ms]
+2024-03-27 05:11:32.009 [info] > git rev-parse --show-toplevel [2ms]
+2024-03-27 05:11:32.009 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [9ms]
+2024-03-27 05:11:32.009 [warning] ENOENT: no such file or directory, open '/workspace/project/.git/refs/remotes/origin/main'
+2024-03-27 05:11:32.009 [info] > git rev-parse --show-toplevel [10ms]
+2024-03-27 05:11:32.009 [info] > git rev-parse refs/remotes/origin/main [2ms]
+2024-03-27 05:11:32.009 [info] > git status -z -uall [113ms]
+2024-03-27 05:11:32.009 [info] > git config --get commit.template [2ms]
+2024-03-27 05:11:32.009 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-03-27 05:11:32.009 [warning] ENOENT: no such file or directory, open '/workspace/project/.git/refs/remotes/origin/main'
+2024-03-27 05:11:32.009 [info] > git rev-parse refs/remotes/origin/main [7ms]
+2024-03-27 05:11:32.009 [info] > git status -z -uall [1ms]
+2024-03-27 05:11:32.517 [info] > git check-ignore -v -z --stdin [1ms]
+2024-03-27 05:11:33.893 [info] > git config --get commit.template [3ms]
+2024-03-27 05:11:33.905 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2024-03-27 05:11:33.911 [warning] ENOENT: no such file or directory, open '/workspace/project/.git/refs/remotes/origin/main'
+2024-03-27 05:11:33.912 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2024-03-27 05:11:33.919 [info] > git status -z -uall [1ms]
+2024-03-27 05:11:34.786 [info] > git config --local branch.main.github-pr-owner-number [1ms]
+2024-03-27 05:11:34.786 [warning] git config failed: Failed to execute git
+2024-03-27 05:11:43.752 [info] > git config --get commit.template [12ms]
+2024-03-27 05:11:43.753 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-03-27 05:11:43.764 [warning] ENOENT: no such file or directory, open '/workspace/project/.git/refs/remotes/origin/main'
+2024-03-27 05:11:43.764 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2024-03-27 05:11:43.777 [info] > git status -z -uall [1ms]
+2024-03-27 05:11:43.974 [info] > git config --local branch.main.github-pr-owner-number [2ms]
+2024-03-27 05:11:43.974 [warning] git config failed: Failed to execute git
+2024-03-27 05:11:48.801 [info] > git config --get commit.template [9ms]
+2024-03-27 05:11:48.802 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2024-03-27 05:11:48.810 [warning] ENOENT: no such file or directory, open '/workspace/project/.git/refs/remotes/origin/main'
+2024-03-27 05:11:48.811 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2024-03-27 05:11:48.823 [info] > git status -z -uall [2ms]
+2024-03-27 05:11:49.022 [info] > git config --local branch.main.github-pr-owner-number [1ms]
+2024-03-27 05:11:49.023 [warning] git config failed: Failed to execute git
+2024-03-27 05:11:53.844 [info] > git config --get commit.template [7ms]
+2024-03-27 05:11:53.846 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-03-27 05:11:53.851 [warning] ENOENT: no such file or directory, open '/workspace/project/.git/refs/remotes/origin/main'
+2024-03-27 05:11:53.852 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2024-03-27 05:11:53.858 [info] > git status -z -uall [1ms]
+2024-03-27 05:12:12.509 [info] > git config --get commit.template [13ms]
+2024-03-27 05:12:12.510 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-03-27 05:12:12.519 [warning] ENOENT: no such file or directory, open '/workspace/project/.git/refs/remotes/origin/main'
+2024-03-27 05:12:12.520 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2024-03-27 05:12:12.532 [info] > git status -z -uall [1ms]
+2024-03-27 05:16:34.598 [info] > git config --local branch.main.github-pr-owner-number [1ms]
+2024-03-27 05:16:34.598 [warning] git config failed: Failed to execute git
+2024-03-27 05:21:34.610 [info] > git config --local branch.main.github-pr-owner-number [1ms]
+2024-03-27 05:21:34.610 [warning] git config failed: Failed to execute git
+2024-03-27 05:26:34.619 [info] > git config --local branch.main.github-pr-owner-number [2ms]
+2024-03-27 05:26:34.619 [warning] git config failed: Failed to execute git
+2024-03-27 05:31:34.629 [info] > git config --local branch.main.github-pr-owner-number [1ms]
+2024-03-27 05:31:34.629 [warning] git config failed: Failed to execute git
+2024-03-27 05:36:34.639 [info] > git config --local branch.main.github-pr-owner-number [1ms]
+2024-03-27 05:36:34.639 [warning] git config failed: Failed to execute git
+2024-03-27 05:41:34.649 [info] > git config --local branch.main.github-pr-owner-number [1ms]
+2024-03-27 05:41:34.649 [warning] git config failed: Failed to execute git
+2024-03-27 05:46:34.661 [info] > git config --local branch.main.github-pr-owner-number [1ms]
+2024-03-27 05:46:34.662 [warning] git config failed: Failed to execute git
+2024-03-27 05:51:34.670 [info] > git config --local branch.main.github-pr-owner-number [1ms]
+2024-03-27 05:51:34.671 [warning] git config failed: Failed to execute git
+2024-03-27 05:56:34.679 [info] > git config --local branch.main.github-pr-owner-number [1ms]
+2024-03-27 05:56:34.679 [warning] git config failed: Failed to execute git
+2024-03-27 06:01:34.692 [info] > git config --local branch.main.github-pr-owner-number [1ms]
+2024-03-27 06:01:34.692 [warning] git config failed: Failed to execute git
+2024-03-27 06:03:18.381 [info] > git config --get commit.template [7ms]
+2024-03-27 06:03:18.382 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2024-03-27 06:03:18.387 [warning] ENOENT: no such file or directory, open '/workspace/project/.git/refs/remotes/origin/main'
+2024-03-27 06:03:18.388 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2024-03-27 06:03:18.395 [info] > git status -z -uall [1ms]
+2024-03-27 06:03:18.591 [info] > git config --local branch.main.github-pr-owner-number [2ms]
+2024-03-27 06:03:18.591 [warning] git config failed: Failed to execute git
+2024-03-27 06:05:13.675 [info] > git merge-base refs/heads/main refs/remotes/origin/main [2ms]
+2024-03-27 06:05:13.685 [info] > git rev-list --count --left-right refs/heads/main...refs/remotes/origin/main [2ms]
+2024-03-27 06:06:34.706 [info] > git config --local branch.main.github-pr-owner-number [1ms]
+2024-03-27 06:06:34.706 [warning] git config failed: Failed to execute git
+2024-03-27 06:11:34.720 [info] > git config --local branch.main.github-pr-owner-number [2ms]
+2024-03-27 06:11:34.720 [warning] git config failed: Failed to execute git
+2024-03-27 06:11:52.555 [info] > git log --oneline --cherry main...main@{upstream} -- [2ms]
+2024-03-27 06:11:52.853 [info] > git pull --tags origin main [292ms]
+2024-03-27 06:11:52.853 [info] From https://github.com/freeCodeCamp/learn-celestial-bodies-database
+ * branch            main       -> FETCH_HEAD
+2024-03-27 06:11:53.187 [info] > git push origin main:main [323ms]
+2024-03-27 06:11:53.187 [info] remote: Permission to freeCodeCamp/learn-celestial-bodies-database.git denied to trantheduy123.
+fatal: unable to access 'https://github.com/freeCodeCamp/learn-celestial-bodies-database.git/': The requested URL returned error: 403
+2024-03-27 06:12:04.343 [info] > git config --get commit.template [6ms]
+2024-03-27 06:12:04.344 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-03-27 06:12:04.350 [warning] ENOENT: no such file or directory, open '/workspace/project/.git/refs/remotes/origin/main'
+2024-03-27 06:12:04.351 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2024-03-27 06:12:04.358 [info] > git status -z -uall [2ms]
+2024-03-27 06:12:42.896 [info] > git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z --shortstat --diff-merges=first-parent --author-date-order ebef6c6b5a5bd079e5abd81c2740b1261740ce15..b63a1c8ba96686b49776018499b129a5d1f4db3b [5ms]
+2024-03-27 06:12:43.282 [info] > git diff --shortstat ebef6c6b5a5bd079e5abd81c2740b1261740ce15...b63a1c8ba96686b49776018499b129a5d1f4db3b [2ms]
+2024-03-27 06:12:45.844 [info] > git diff --name-status -z --diff-filter=ADMR 4222fe702b6c3ed9551ae491c25de0f95dea4d5e...dab3d86c46e6ceae6a76bee7ba9c5251dbab7a24 [2ms]
+2024-03-27 06:12:46.538 [info] > git check-ignore -v -z --stdin [1ms]
+2024-03-27 06:12:46.657 [info] > git diff --name-status -z --diff-filter=ADMR dab3d86c46e6ceae6a76bee7ba9c5251dbab7a24...b63a1c8ba96686b49776018499b129a5d1f4db3b [1ms]
+2024-03-27 06:12:47.388 [info] > git check-ignore -v -z --stdin [1ms]
+2024-03-27 06:13:30.037 [info] > git config --local branch.main.github-pr-owner-number [2ms]
+2024-03-27 06:13:30.037 [warning] git config failed: Failed to execute git
+2024-03-27 06:13:35.429 [info] > git check-ignore -v -z --stdin [1ms]
+2024-03-27 06:13:56.621 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) refs/heads/ [5ms]
+2024-03-27 06:13:56.633 [info] > git config --local branch.main.github-pr-owner-number [0ms]
+2024-03-27 06:13:56.633 [warning] git config failed: Failed to execute git
+2024-03-27 06:14:24.696 [info] > git config --get commit.template [2ms]
+2024-03-27 06:14:24.707 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-03-27 06:14:24.717 [warning] ENOENT: no such file or directory, open '/workspace/project/.git/refs/remotes/origin/main'
+2024-03-27 06:14:24.718 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2024-03-27 06:14:24.729 [info] > git status -z -uall [1ms]
+2024-03-27 06:14:29.749 [info] > git config --get commit.template [7ms]
+2024-03-27 06:14:29.749 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-03-27 06:14:29.755 [warning] ENOENT: no such file or directory, open '/workspace/project/.git/refs/remotes/origin/main'
+2024-03-27 06:14:29.756 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2024-03-27 06:14:29.763 [info] > git status -z -uall [1ms]
+2024-03-27 06:14:34.786 [info] > git config --get commit.template [8ms]
+2024-03-27 06:14:34.786 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-03-27 06:14:34.795 [warning] ENOENT: no such file or directory, open '/workspace/project/.git/refs/remotes/origin/main'
+2024-03-27 06:14:34.796 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2024-03-27 06:14:34.804 [info] > git status -z -uall [2ms]
+2024-03-27 06:14:39.833 [info] > git config --get commit.template [15ms]
+2024-03-27 06:14:39.833 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-03-27 06:14:39.844 [warning] ENOENT: no such file or directory, open '/workspace/project/.git/refs/remotes/origin/main'
+2024-03-27 06:14:39.845 [info] > git rev-parse refs/remotes/origin/main [2ms]
+2024-03-27 06:14:39.854 [info] > git status -z -uall [2ms]
+2024-03-27 06:14:45.487 [info] > git check-ignore -v -z --stdin [1ms]
+2024-03-27 06:14:48.153 [info] > git show --textconv :.git/COMMIT_EDITMSG [11ms]
+2024-03-27 06:14:48.154 [info] > git ls-files --stage -- /workspace/project/.git/COMMIT_EDITMSG [1ms]
+2024-03-27 06:14:48.316 [info] > git check-ignore -v -z --stdin [1ms]
+2024-03-27 06:14:48.680 [info] > git ls-files --stage -- /workspace/project/.git/COMMIT_EDITMSG [1ms]
+2024-03-27 06:14:48.868 [info] > git show --textconv :.git/COMMIT_EDITMSG [1ms]
+2024-03-27 06:14:53.098 [info] > git show --textconv :.freeCodeCamp/test/.cwd [6ms]
+2024-03-27 06:14:53.100 [info] > git ls-files --stage -- /workspace/project/.freeCodeCamp/test/.cwd [1ms]
+2024-03-27 06:14:53.108 [info] > git cat-file -s afdd3430b3455f6e6ad394a9772f9a70f672ecbc [1ms]
+2024-03-27 06:15:24.764 [info] > git ls-files --stage -- /workspace/project/.freeCodeCamp/test/.cwd [1ms]
+2024-03-27 06:15:24.774 [info] > git cat-file -s afdd3430b3455f6e6ad394a9772f9a70f672ecbc [2ms]
+2024-03-27 06:15:31.483 [info] > git show --textconv HEAD:.freeCodeCamp/test/.cwd [24ms]
+2024-03-27 06:15:31.483 [info] > git show --textconv :.freeCodeCamp/test/.cwd [19ms]
+2024-03-27 06:15:31.483 [info] > git ls-tree -l HEAD -- /workspace/project/.freeCodeCamp/test/.cwd [9ms]
+2024-03-27 06:15:31.484 [info] > git ls-files --stage -- /workspace/project/.freeCodeCamp/test/.cwd [2ms]
+2024-03-27 06:15:31.491 [info] > git cat-file -s afdd3430b3455f6e6ad394a9772f9a70f672ecbc [2ms]
+2024-03-27 06:15:31.976 [info] > git show --textconv HEAD:.freeCodeCamp/test/.next_command [21ms]
+2024-03-27 06:15:31.976 [info] > git show --textconv :.freeCodeCamp/test/.next_command [15ms]
+2024-03-27 06:15:31.976 [info] > git ls-tree -l HEAD -- /workspace/project/.freeCodeCamp/test/.next_command [8ms]
+2024-03-27 06:15:31.978 [info] > git ls-files --stage -- /workspace/project/.freeCodeCamp/test/.next_command [3ms]
+2024-03-27 06:15:31.985 [info] > git cat-file -s a5570778726608c2b2b380631719d38d786944d5 [2ms]
+2024-03-27 06:15:32.496 [info] > git check-ignore -v -z --stdin [1ms]
+2024-03-27 06:15:33.019 [info] > git show --textconv HEAD:.freeCodeCamp/test/.cwd [19ms]
+2024-03-27 06:15:33.019 [info] > git show --textconv :.freeCodeCamp/test/.cwd [13ms]
+2024-03-27 06:15:33.019 [info] > git ls-tree -l HEAD -- /workspace/project/.freeCodeCamp/test/.cwd [7ms]
+2024-03-27 06:15:33.020 [info] > git ls-files --stage -- /workspace/project/.freeCodeCamp/test/.cwd [2ms]
+2024-03-27 06:15:33.026 [info] > git cat-file -s afdd3430b3455f6e6ad394a9772f9a70f672ecbc [1ms]
+2024-03-27 06:15:35.171 [info] > git show --textconv HEAD:.freeCodeCamp/test/.next_command [32ms]
+2024-03-27 06:15:35.171 [info] > git show --textconv :.freeCodeCamp/test/.next_command [23ms]
+2024-03-27 06:15:35.171 [info] > git ls-tree -l HEAD -- /workspace/project/.freeCodeCamp/test/.next_command [12ms]
+2024-03-27 06:15:35.172 [info] > git ls-files --stage -- /workspace/project/.freeCodeCamp/test/.next_command [2ms]
+2024-03-27 06:15:35.183 [info] > git cat-file -s a5570778726608c2b2b380631719d38d786944d5 [1ms]
+2024-03-27 06:15:54.995 [info] > git show --textconv :.freeCodeCamp/test/.cwd [7ms]
+2024-03-27 06:15:54.996 [info] > git ls-files --stage -- /workspace/project/.freeCodeCamp/test/.cwd [2ms]
+2024-03-27 06:15:55.003 [info] > git cat-file -s afdd3430b3455f6e6ad394a9772f9a70f672ecbc [1ms]
+2024-03-27 06:15:56.682 [info] > git show --textconv HEAD:.freeCodeCamp/test/.next_command [33ms]
+2024-03-27 06:15:56.682 [info] > git show --textconv :.freeCodeCamp/test/.next_command [22ms]
+2024-03-27 06:15:56.682 [info] > git ls-tree -l HEAD -- /workspace/project/.freeCodeCamp/test/.next_command [11ms]
+2024-03-27 06:15:56.683 [info] > git ls-files --stage -- /workspace/project/.freeCodeCamp/test/.next_command [2ms]
+2024-03-27 06:15:56.695 [info] > git cat-file -s a5570778726608c2b2b380631719d38d786944d5 [2ms]
+2024-03-27 06:15:57.733 [info] > git show --textconv HEAD:.freeCodeCamp/test/.cwd [34ms]
+2024-03-27 06:15:57.733 [info] > git show --textconv :.freeCodeCamp/test/.cwd [23ms]
+2024-03-27 06:15:57.733 [info] > git ls-tree -l HEAD -- /workspace/project/.freeCodeCamp/test/.cwd [13ms]
+2024-03-27 06:15:57.734 [info] > git ls-files --stage -- /workspace/project/.freeCodeCamp/test/.cwd [2ms]
+2024-03-27 06:15:57.743 [info] > git cat-file -s afdd3430b3455f6e6ad394a9772f9a70f672ecbc [1ms]
+2024-03-27 06:15:58.528 [info] > git show --textconv HEAD:.freeCodeCamp/test/.next_command [21ms]
+2024-03-27 06:15:58.528 [info] > git show --textconv :.freeCodeCamp/test/.next_command [14ms]
+2024-03-27 06:15:58.528 [info] > git ls-tree -l HEAD -- /workspace/project/.freeCodeCamp/test/.next_command [7ms]
+2024-03-27 06:15:58.529 [info] > git ls-files --stage -- /workspace/project/.freeCodeCamp/test/.next_command [2ms]
+2024-03-27 06:15:58.536 [info] > git cat-file -s a5570778726608c2b2b380631719d38d786944d5 [1ms]
+2024-03-27 06:16:23.578 [info] > git ls-tree -l HEAD -- /workspace/project/.freeCodeCamp/test/.next_command [10ms]
+2024-03-27 06:16:23.580 [info] > git ls-files --stage -- /workspace/project/.freeCodeCamp/test/.next_command [3ms]
+2024-03-27 06:16:23.589 [info] > git cat-file -s a5570778726608c2b2b380631719d38d786944d5 [1ms]
+2024-03-27 06:16:34.734 [info] > git config --local branch.main.github-pr-owner-number [1ms]
+2024-03-27 06:16:34.734 [warning] git config failed: Failed to execute git
+2024-03-27 06:17:20.896 [info] > git ls-tree -l HEAD -- /workspace/project/.freeCodeCamp/test/.next_command [11ms]
+2024-03-27 06:17:20.897 [info] > git ls-files --stage -- /workspace/project/.freeCodeCamp/test/.next_command [2ms]
+2024-03-27 06:17:20.908 [info] > git cat-file -s a5570778726608c2b2b380631719d38d786944d5 [1ms]
+2024-03-27 06:17:28.438 [info] > git check-ignore -v -z --stdin [2ms]
+2024-03-27 06:17:31.888 [info] > git check-ignore -v -z --stdin [2ms]
+2024-03-27 06:21:34.745 [info] > git config --local branch.main.github-pr-owner-number [1ms]
+2024-03-27 06:21:34.745 [warning] git config failed: Failed to execute git
